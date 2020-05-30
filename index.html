@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css"/>
     <meta charset="UTF-8" />
+    <script src=""></script>
+    <link rel="stylesheet" href="">
     <title>Run Buddy</title>
   </head>
   <body>
@@ -11,6 +13,10 @@
     <nav>
         <ul>
         <!-- List item element-->
+        <li>
+          <!-- Anchor element -->
+          <a href="./frontend/folder1/folder2/page.html">LINK TO ANOTHER PAGE</a>
+        </li>
         <li>
           <!-- Anchor element -->
           <a href="#what-we-do">What We Do</a>
@@ -25,8 +31,43 @@
           <a href="#reach-out">Reach Out</a>
         </li>
       </ul>
+      <img src="" alt="">
     </nav>
     </header>
+    <section class="hero">
+      <div class="hero-form">
+        <h3>Get Started Today</h3>
+        <p>Fill out this form and one of our trainers will schedule a consult</p>
+      <!-- Add form element -->
+      <form>
+        <label for="name">Enter full name:</label>
+        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+        
+        <label for="email">Enter email address:</label>
+        <input type="text" placeholder="Email Address" name="email" id="email" class="form-input">
+        
+        <label for="phone">Enter a telephone number:</label>
+        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+        <p>
+          Have you worked out with a trainer before?
+          <input type="radio" name="trainer-confirm" id="trainer-yes" />
+          <label for="trainer-yes">Yes</label>
+          <input type="radio" name="trainer-confirm" id="trainer-no" />
+          <label for="trainer-no">No</label><br>
+        </p>
+        <p>
+          <label for="checkbox" >
+            I acknowledge that I am at least 18 years of age.
+          </label>
+          <input type="checkbox" name="age-confirm" id="checkbox" />
+        </p>
+        <button type="submit">
+          Get running!
+        </button>
+
+      </form>
+      </div>
+    </section>
     <section>
 
     </section>
